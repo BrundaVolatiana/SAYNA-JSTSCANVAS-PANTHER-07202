@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../IllustrationsLogo/Allpages/arrière_plan.png);
+    color: white;
+}
+li,h2{
+    list-style: none;
+    font-family: BEYNO;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+h2{
+    font-family: Beyno;
+    font-size: 32px;
+    color: #9E91B7;
+    margin-bottom:30px ;
+    font-weight: normal;
+}
+
+/* HEADER */
+header{
+    width: 90%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;   
+}
+nav{
+    width: inherit;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 4rem;
+    
+}
+.lien{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20rem;
+    font-family: BEYNO;
+    font-size: 2px;
+}
+
+li h2{
+    font-family: BEYNO;
+    font-size: 18px;
+    font-weight: normal;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+}
+nav img{
+    min-width: fit-content;
+    min-height: fit-content;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: #9E91B7;
+}
+a:focus{
+    text-decoration: underline;
+    color: #021740;
+}
+
+
+/* PREMIER */
+.premier{
+    margin-bottom: -10%;
+}
+.premier img{
+    margin-top: 20px;
+    position: relative;
+    top: -70px ;
+    right: 115px;
+    height: min-content;
+}
+.intro{
+    position: relative;
+    top: -780px;
+    right:-450px ;
+    width: 35%;
+}
+.intro h2{
+    font-family:BEYNO ;
+    font-size: 43px;
+    font-weight: normal;
+    color: #9E91B7 ;
+    margin-bottom: 20px;
+}
+.intro span{
+    font-family: wakanda forever;
+    font-size: 22px;
+    PADDING-bottom: 30px;
+}
+.intro p{
+    padding-top: 20px;
+}
+
+
+/* SECOND */
+
+
+
+.second,.third{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 80%;
+    gap: 60px;
+    line-height: 25px;
+    text-align: justify;
+}
+.second{
+    background-image: url(../IllustrationsLogo/Wakanda/Pantherwakanda2.png);
+    background-position: unset;
+}
+.citation{
+    font-size: 14px;
+}
+.historique,.mythe{
+    width: 40%;
+    gap: 100px;
+    margin-left: 10%;
+}
+
+.link{
+    background-color: #3D2DA6;
+    height: 200px;
+    margin: 50px 0px;
+    text-align: center;
+    
+}
+
+.left,.right{
+    width: 40%;
+    gap: 80px;
+    margin-left: 10%;
+    margin-bottom:5%;
+}
+
+
+
+
+/* FOOTER */
+
+footer{
+    background:url(../IllustrationsLogo/Allpages/back_footer.png);
+    display: flex;
+    flex-direction: row;
+    padding:5% 15% ;
+    font-family: cantarell;
+    align-items: center;
+}
+.pic1{
+    position:relative;
+}
+.pic2{
+    position:relative;
+    top:-195px;
+    right:-40px;
+}
+
+.feet{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.write{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 30px;
+}
+.found ul{
+    display: flex;
+    flex-direction: row;
+}
+.found li{
+    justify-content: space-between;
+    padding-right: 12%;
+}
+.shallow{
+    display: flex;
+    flex-direction: row;
+    
+}
+.shallow li{
+    list-style-type: inherit;
+   margin-left: 40px;
+   font-family: CANTARELL;
+   font-size: 14px;
+}
+.point{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    font-family: CANTARELL;
+    font-size: 14px;
+}
+.pan{
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 10px;
+
+}
