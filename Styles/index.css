@@ -6,9 +6,6 @@
 body{
     background-image: url(../IllustrationsLogo/Allpages/arrière_plan.png);
     color: white;
-    /* overflow-x:hidden; */
-    /* width: 100%; */
-    /* background-size: 120%; */
     width: FIT-content;
    
 }
@@ -162,7 +159,7 @@ a:focus{
     height: 80%;
     margin-top: 10%;
     margin-left:10%; 
-    scale: 2;
+    scale: 1.89;
     margin-right:7%;
 }
 
