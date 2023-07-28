@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigme</title>
+    <link rel="stylesheet" href="./Styles/enigme2.css">
+</head>
+<body>
+    <!-- popupbox -->
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>BRAVO!</h2>
+        <p>Tu Tu as trouvé la réponse. Es tu prêt <br>
+            pour l’énigme suivante ?</p>
+        <a href="enigme3.html"><button>QUESTION SUIVANTE</button></a>
+    </div>
+</div>
+
+<!-- popupend  -->
+    <section class="lignes">
+            <div class="vertical-line">
+            </div>
+            <div class="eme">
+                <div class="vertical-line"></div>
+                    <ul class="adresse">
+                        <li><img src="IllustrationsLogo/Allpages/icon_facebook.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_instagram.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_twitter.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_tiktok.png" class="fb"></li>
+    
+                    </ul>
+            </div>
+        </section>
+    <header>
+        <nav>
+            <a href="index.html"><img src="IllustrationsLogo/Allpages/footer2.png" alt="logos"></a>
+                    <ul class="lien">
+                        <li><h2><a href="index.html">Accueil</a></h2></li>
+                        <li><h2><a href="wakanda.html">Wakanda</a></h2></li>
+                        <li><h2><a href="enigme.html">Engine</a></h2></li>
+                    </ul>
+
+        </nav>
+    </header>
+    <div class="first">
+        <img src="IllustrationsLogo/Enigme/Pantherenigme1.png" alt=""class='ptr animate-element'>
+        <div class="bg">
+            <h2 class="animate-element">RELEVE LE DEFI <br> DES DORA MILAJE</h2>
+            <p class="INTROD animate-element">
+                Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde 
+                rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la 
+                vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des 
+                renseignements wakandais. <br> 
+                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, 
+                et apprend par la même occasion la première valeur d’une Dora Milaje !
+            </p>
+                <img src="IllustrationsLogo/Enigme/Pantherenigme3.png" alt="" class="DM">
+            </div>
+    </div>
+    <img src="IllustrationsLogo/Enigme/Pantherenigme2.png" alt="" class="fond">
+
+    <div class="second">  
+        <div class="enigme">
+            <div class="letter">
+                <div class="alphabet">
+                    <h2 class="animate-element">ENIGME NUMERO 2</h2>
+                    <p class="animate-element">
+                        Une anecdote intéressante est écrite juste en dessous mais elle est codée par un 
+                        code césar également appelé code de “chiffrement par décalage”. L’alphabet a été 
+                        décalé, trouve la clé de chiffrement qui te permettrait de retrouver les lettres et 
+                        retranscris la phrase : <br> <br>
+                        Tm  nqtu  lmjcbm  i  Wikstivl  mv Kitqnwzvqm. Qt  a'ioqb  lm  ti  dqttm  lwvb  mab 
+                        wzqoqviqzm Zgiv Kwwotmz mb  moitmumvb  ti  dqttm  ycq  i  dc  viqbzm  tm 
+                        uwcdmumvb xwtqbqycm lma jtiks xivbpmza
+                    </p>
+                </div>
+                <div class="answer">
+                    <p class="animate-element">Alors, as tu la réponse ?</p>
+                    <form method="post" action="traitement.php">
+                        <label for="pseuso"></label> 
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Réponse"/><br/>
+                    </form>
+                    <button class="animate-element" onclick="openPopup()">ENVOYER</button>
+                </div>
+            </div>
+            <div>
+                <p class="DYK animate-element">
+                    Le savais tu ? <br><br>
+                    Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français <br>
+                    est la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans <br>
+                    une phrase. Et si tu regardais quel symbole revient le plus souvent pour en <br>
+                    déduire son décalage dans l’alphabet ?
+                            
+                </p>
+                <img src="IllustrationsLogo/Enigme/Pantherenigme2.png" alt="" class="wkd">
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="pic">
+            <img src="IllustrationsLogo/Allpages/footer1.png" alt="" class="pic1 animate-element">
+            <img src="IllustrationsLogo/Allpages/footer2.png" alt="" class="pic2 animate-element">
+        </div>
+        <div class="feet">
+            <div class="write">
+                <div class="pg animate-element">
+                    <p class="peter">PAGES</p> <br><br>
+                    <P>À propos <br> Wakanda</P>
+                </div>
+                <div class="found animate-element">
+                    <p class="peter">RETROUVEZ NOUS</p> <br> <br>
+                    <ul>
+                        <li><img src="IllustrationsLogo/Allpages/footer3.png" alt=""></li>
+                        <li><img src="IllustrationsLogo/Allpages/footer4.png" alt=""></li>
+                        <li><img src="IllustrationsLogo/Allpages/footer5.png" alt=""></li>
+                        <li><img src="IllustrationsLogo/Allpages/footer6.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="point animate-element">
+                <p>2022 Tous droits réservés</p> 
+                <ul class="shallow">
+                    <li>Politique de confidentialité</li>
+                    <li>Conditions d’utilisation</li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

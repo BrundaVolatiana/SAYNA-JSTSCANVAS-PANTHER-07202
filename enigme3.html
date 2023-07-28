@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigme</title>
+    <link rel="stylesheet" href="./Styles/enigme3.css">
+</head>
+<body>
+
+
+    <section class="lignes">
+            <div class="vertical-line">
+            </div>
+            <div class="eme">
+                <div class="vertical-line"></div>
+                    <ul class="adresse">
+                        <li><img src="IllustrationsLogo/Allpages/icon_facebook.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_instagram.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_twitter.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_tiktok.png" class="fb"></li>
+    
+                    </ul>
+            </div>
+        </section>
+    <!-- popupbox -->
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>BRAVO!</h2>
+            <p>Tu as trouvé la réponse. Es tu prêt <br>
+                pour l'énigme suivante ?</p>
+            <a href="index.html"><button>Revenir à l'acceuil</button></a>
+        </div>
+    </div>
+    
+    <!-- popupend  -->
+    <header>
+        <nav>
+            <a href="index.html"><img src="IllustrationsLogo/Allpages/footer2.png" alt="logos"></a>
+                    <ul class="lien">
+                        <li><h2><a href="index.html">Accueil</a></h2></li>
+                        <li><h2><a href="wakanda.html">Wakanda</a></h2></li>
+                        <li><h2><a href="enigme.html">Engine</a></h2></li>
+                    </ul>
+
+        </nav>
+    </header>
+    <div class="first">
+        <img src="IllustrationsLogo/Enigme/Pantherenigme1.png" alt=""class='ptr animate-element'>
+        <div class="bg">
+            <h2 class="animate-element">RELEVE LE DEFI <br> DES DORA MILAJE</h2>
+            <p class="INTROD animate-element">
+                Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde 
+                rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la 
+                vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des 
+                renseignements wakandais. <br> 
+                Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, 
+                et apprend par la même occasion la première valeur d’une Dora Milaje !
+            </p>
+                <img src="IllustrationsLogo/Enigme/Pantherenigme3.png" alt="" class="DM">
+                <img src="IllustrationLogo/3_Page_Enigme/Pantherenigme3.png" alt="" class="dmA">
+            </div>
+    </div>
+    <img src="IllustrationsLogo/Enigme/Pantherenigme2.png" alt="" class="fond">
+
+    <div class="second">  
+        <div class="enigme">
+            <div class="letter">
+                <div class="alphabet">
+                    <h2 class="animate-element">ENIGME NUMERO 2</h2>
+                    <p class="animate-element">
+                        Lorsque T’Challa mange l’herbe en forme de coeur pour recevoir les pouvoirs du 
+                        Black Panther, il voit son père afin de lui demander conseil afin de devenir un bon 
+                        roi. Cette scène rappelle la même scène d’un certain film oùun père dit àson fils de 
+                        ne pas oublier qui il est et d’oùil vient. Quel est ce film ?<br> <br>
+                        01001100  01000101  00100000  01010010  01001111  01001001 
+                        00100000  01001100  01001001  01001111  01001110  00001101 
+                        00001010
+                    </p>
+                </div>
+                <div class="answer">
+                    <p class="animate-element">Alors, as tu la réponse ?</p>
+                    <form method="post" action="traitement.php">
+                        <label for="pseuso"></label> 
+                        <input type="text" name="pseudo" id="pseudo" placeholder="Réponse"/><br/>
+                    </form>
+                    <button class="animate-element" onclick="openPopup()">ENVOYER</button>
+                </div>
+            </div>
+            <div>
+                <p class="DYK animate-element">
+                    Le savais tu ? <br><br>
+                    Le philosophe Francis Bacon inventa en 1605 un alphabet bilitère, uniquement <br>
+                    composé des deux lettres A et B. C'est en quelque sorte l'ancêtre du système <br>
+                    binaire des ordinateurs actuels car toute lettre pouvait être construite avec un <br>
+                    enchainement  précis  de  ces  deux  lettres,  tandis  que  le  système  binaire <br>
+                    informatique utilise 0 et 1.
+                            
+                </p>
+                <img src="IllustrationsLogo/Enigme/Pantherenigme2.png" alt="" class="wkd">
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="pic">
+            <img src="IllustrationsLogo/Allpages/footer1.png" alt="" class="pic1 animate-element">
+            <img src="IllustrationsLogo/Allpages/footer2.png" alt="" class="pic2 animate-element">
+        </div>
+        <div class="feet">
+            <div class="write">
+                <div class="pg animate-element">
+                    <p class="peter">PAGES</p> <br><br>
+                    <P>À propos <br> Wakanda</P>
+                </div>
+                <div class="found animate-element">
+                    <p class="peter">RETROUVEZ NOUS</p> <br> <br>
+                    <ul>
+                        <li><img src="IllustrationsLogo/Allpages/footer3.png" alt=""></li>
+                        <li><img src="IllustrationsLogo/Allpages/footer4.png" alt=""></li>
+                        <li><img src="IllustrationsLogo/Allpages/footer5.png" alt=""></li>
+                        <li><img src="IllustrationsLogo/Allpages/footer6.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="point animate-element">
+                <p>2022 Tous droits réservés</p> 
+                <ul class="shallow">
+                    <li>Politique de confidentialité</li>
+                    <li>Conditions d’utilisation</li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
