@@ -28,6 +28,60 @@ h2{
     font-weight: normal;
 }
 
+/* LIGNES */
+
+.lignes{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: min-content;
+    height: 30rem;
+    gap: 0.3rem;
+    margin-left: 2.5%;
+    animation-name: fadeInTop;
+    animation-fill-mode: easy-in-out;
+    animation-duration: 1500ms;
+}
+.adresse{
+    width: min-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+       
+}
+.adresse img{
+    padding-top:25px;
+}
+.adresse img:hover{
+    width: max-content;
+    filter:brightness(100);
+
+}
+.vertical-line{
+    background-color: #9E91B7;
+    width: 5px;
+     height: 100%;   
+}
+.eme{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes fadeInTop{
+    0%{
+        transform: translateY(-100%) scale(0.1);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+}
+
 /* HEADER */
 header{
     width: 90%;
@@ -174,8 +228,8 @@ footer{
 }
 .pic2{
     position:relative;
-    top:-195px;
-    right:-40px;
+    top:-190px;
+    right:250px;
 }
 
 .feet{
@@ -221,3 +275,20 @@ footer{
     letter-spacing: 10px;
 
 }
+
+
+
+
+/* fade in titre, texte et illustration */
+/* Classe pour les éléments à animer */
+.animate-element {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s, transform 1s;
+  }
+  
+  /* Classe pour les éléments déjà visibles lors du chargement */
+  .animate-element.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
