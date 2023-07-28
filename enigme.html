@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="./Styles/enigme.css">
 </head>
 <body>
+
+<!-- popupbox -->
+
+<div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>BRAVO!</h2>
+            <p>Tu Tu as trouvé la réponse. Es tu prêt <br>
+                pour l’énigme suivante ?</p>
+            <a href="enigme2.html"><button>QUESTION SUIVANTE</button></a>
+        </div>
+    </div>
+
+<!-- popupend  -->
+
+
+
+    <section class="lignes">
+            <div class="vertical-line">
+            </div>
+            <div class="eme">
+                <div class="vertical-line"></div>
+                    <ul class="adresse">
+                        <li><img src="IllustrationsLogo/Allpages/icon_facebook.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_instagram.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_twitter.png" class="fb"></li>
+                        <li><img src="IllustrationsLogo/Allpages/icon_tiktok.png" class="fb"></li>
+    
+                    </ul>
+            </div>
+        </section>
     <header>
         <nav>
             <a href="index.html"><img src="IllustrationsLogo/Allpages/footer2.png" alt="logos"></a>
@@ -20,10 +51,10 @@
         </nav>
     </header>
     <div class="first">
-        <img src="IllustrationsLogo/Enigme/Pantherenigme1.png" alt=""class='ptr'>
+        <img src="IllustrationsLogo/Enigme/Pantherenigme1.png" alt=""class='ptr animate-element'>
         <div class="bg">
-            <h2>RELEVE LE DEFI <br> DES DORA MILAJE</h2>
-            <p class="INTROD">
+            <h2 class="animate-element">RELEVE LE DEFI <br> DES DORA MILAJE</h2>
+            <p class="INTROD animate-element">
                 Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde 
                 rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la 
                 vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des 
@@ -37,38 +68,39 @@
     <img src="IllustrationsLogo/Enigme/Pantherenigme2.png" alt="" class="fond">
 
     <div class="second">
-        <h2>
-            <span>
-                “ SI JE SUIS  FIDELE C’EST A CE TRONE <br>
-            PEU IMPORTE QUI MONTE DESSUS ”
-            </span>   
-        </h2>
+        <div class="epreuve">
+            <h2 class="animate-element">ENIGME NUMERO1</h2>
+            <p class="animate-element">Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, <br>
+                et apprend par la même occasion la première valeur d’une Dora Milaje !</p>
+            
+        </div>
+        
         <div class="enigme">
             <div class="letter">
                 <div class="alphabet">
-                    <p>
-                        Voici la transicription de l’alphabet : <br><br>
-                        A = <span>A</span>; B = <span>B</span>; C = <span>C</span>; D = <span>D</span>; E= <span>E</span>; F = <span>F</span>; G = <span>G</span>; H = <span>H</span>; I = <span>I</span>; J = <span>J</span>; <br>
-                        K = <span>K</span>; L = <span>L</span>; M = <span>M</span>; N = <span>N</span>; O = <span>O</span>; P = <span>P</span>; Q = <span>Q</span>; R = <span>R</span>; S = <span>S</span>; T = <span>T</span>; <br>
-                        U = <span>U</span>; W = <span>W</span>; X = <span>X</span>; Y = <span>Y</span>; Z = <span>Z</span>
-        
-                    </p>
+                    <h2 class="animate-element">
+                        <span>
+                            “ SI JE SUIS  FIDELE C’EST  A CE TRONE 
+                        PEU IMPORTE QUI MONTE DESSUS ”
+                        </span>   
+                    </h2>
                 </div>
                 <div class="answer">
-                    <p>Alors, as tu la réponse ?</p>
+                    <p class="animate-element">Alors, as tu la réponse ?</p>
                     <form method="post" action="traitement.php">
                         <label for="pseuso"></label> 
                         <input type="text" name="pseudo" id="pseudo" placeholder="Réponse"/><br/>
                     </form>
-                    <button>ENVOYER</button>
+                    <button class="animate-element" onclick="openPopup()">ENVOYER</button>
                 </div>
             </div>
             <div>
-                <p class="DYK">
-                    Le savais tu ? <br> <br>    
-                    Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est <br> 
-                    la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une <br>
-                    phrase. Et si tu regardais quel symbole revient le plus souvent ?
+                <p class="DYK animate-element">
+                    Voici la transicription de l’alphabet : <br>
+                        A = <span>A</span>; B = <span>B</span>; C = <span>C</span>; D = <span>D</span>; E= <span>E</span>; F = <span>F</span>; G = <span>G</span>; H = <span>H</span>; I = <span>I</span>; J = <span>J</span>; <br>
+                        K = <span>K</span>; L = <span>L</span>; M = <span>M</span>; N = <span>N</span>; O = <span>O</span>; P = <span>P</span>; Q = <span>Q</span>; R = <span>R</span>; S = <span>S</span>; T = <span>T</span>; <br>
+                        U = <span>U</span>; W = <span>W</span>; X = <span>X</span>; Y = <span>Y</span>; Z = <span>Z</span>
+        
                 </p>
                 <img src="IllustrationsLogo/Enigme/Pantherenigme2.png" alt="" class="wkd">
             </div>
@@ -77,17 +109,17 @@
     </div>
     <footer>
         <div class="pic">
-            <img src="IllustrationsLogo/Allpages/footer1.png" alt="" class="pic1">
-            <img src="IllustrationsLogo/Allpages/footer2.png" alt="" class="pic2">
+            <img src="IllustrationsLogo/Allpages/footer1.png" alt="" class="pic1 animate-element">
+            <img src="IllustrationsLogo/Allpages/footer2.png" alt="" class="pic2 animate-element">
         </div>
         <div class="feet">
             <div class="write">
-                <div class="pg">
-                    <p class="pan">PAGES</p> <br><br>
+                <div class="pg animate-element">
+                    <p class="peter">PAGES</p> <br><br>
                     <P>À propos <br> Wakanda</P>
                 </div>
-                <div class="found">
-                    <p class="pan">RETROUVEZ NOUS</p> <br> <br>
+                <div class="found animate-element">
+                    <p class="peter">RETROUVEZ NOUS</p> <br> <br>
                     <ul>
                         <li><img src="IllustrationsLogo/Allpages/footer3.png" alt=""></li>
                         <li><img src="IllustrationsLogo/Allpages/footer4.png" alt=""></li>
@@ -96,7 +128,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="point">
+            <div class="point animate-element">
                 <p>2022 Tous droits réservés</p> 
                 <ul class="shallow">
                     <li>Politique de confidentialité</li>
@@ -107,7 +139,7 @@
         </div>
     </footer>
 
-
+    <script src="script.js"></script>
 
 </body>
 </html>
